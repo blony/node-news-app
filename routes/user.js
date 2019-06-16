@@ -10,6 +10,16 @@ exports.getsmscode = (req,res) => {
 }
 exports.login = (req,res) => {
     res.json({
+        code:666,
+        message:'success',
+        data:{
+            token:'90EDidsfisd9E0eu8FUDie',
+            refresh_token:'UYge98ERYbe9ENIJe0rjjjbhre890h'
+        }
+    })
+}
+exports.authorzations= (req,res) =>{
+    res.json({
         code:1,
         message:'success',
         data:{
