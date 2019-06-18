@@ -1,4 +1,5 @@
 const user = require('./user')
+const news = require('./news')
 //const table = require('./table')
 module.exports = app => {
     //用户操作
@@ -7,6 +8,6 @@ module.exports = app => {
     app.get('/user/getsmscode',user.getsmscode)
     app.post('/user/logout',user.logout)
 
-    //表格数据获取
- //   app.get('/table/list',table.list)
+    //新闻数据
+    app.get('/getchannels',news.channels)
 }
