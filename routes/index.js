@@ -9,5 +9,6 @@ module.exports = app => {
     app.post('/user/logout',user.logout)
 
     //新闻数据
-    app.get('/getchannels',news.channels)
+    app.get('/getchannels',news.channels) 
+    app.post('/getartcles',news.articles)
 }
