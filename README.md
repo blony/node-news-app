@@ -1,6 +1,6 @@
-# Node Admin General 
+# Node News App 
 
-> API service for vue-admin-general.
+> API service for news-app.
 
 ## Build Setup
 
