@@ -76,6 +76,33 @@ var newLists = {
     }
 }
 
+exports.allChannels = (req,res) => {
+    res.json({
+        code: 1,
+        message:'success',
+        data:{
+            channels:[
+                {id:0,name:'热门'},
+                {id:1,name:'前端'},
+                {id:2,name:'Java'}, 
+                {id:3,name:'Python'},
+                {id:4,name:'大数据'},
+                {id:5,name:'PHP'},
+                {id:6,name:'C++'},
+                {id:7,name:'区块链'},
+                {id:8,name:'Flash'},
+                {id:9,name:'Go'},
+                {id:10,name:'Nodejs'},
+                {id:11,name:'Ruby'},
+                {id:12,name:'IOS'},
+                {id:13,name:'安卓'},
+                {id:14,name:'NET'},
+                {id:15,name:'机器学习'},
+            ]
+        }
+    })
+}
+
 exports.channels = (req,res) => {
     res.json({
         code:1,
