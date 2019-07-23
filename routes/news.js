@@ -154,7 +154,7 @@ exports.articles = (req,res)=> {
 // 详情数据方法
 exports.detailData = (req, res) =>{
     const { id } = req.query
-    console.log(id)
+    console.log('该条新闻的ID为：'+id)
     res.json({
         code:1,
         message:'success',
@@ -186,6 +186,17 @@ exports.detailData = (req, res) =>{
                 {id:2,title:'我也不知道写点什么好'},
                 {id:3,title:'总之这个页面看起来很牛X🐂的样子'}
             ]
+        }
+    })
+}
+
+exports.searchResult = (req, res) => {
+    const { str } =req.query
+    res.json({
+        code: 1,
+        message:'success',
+        data:{
+            keyword:[str+'稀有',str+'史诗',str+'传说']
         }
     })
 }

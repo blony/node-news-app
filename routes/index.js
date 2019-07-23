@@ -13,4 +13,7 @@ module.exports = app => {
     app.get('/getchannels',news.channels) 
     app.post('/getartcles',news.articles)
     app.get('/getDetail',news.detailData)
+
+    //搜索
+    app.get('/search',news.searchResult)
 }
