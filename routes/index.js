@@ -12,4 +12,5 @@ module.exports = app => {
     app.get('/getallchannels',news.allChannels)
     app.get('/getchannels',news.channels) 
     app.post('/getartcles',news.articles)
+    app.get('/getDetail',news.detailData)
 }
