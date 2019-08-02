@@ -30,7 +30,7 @@ const server = http.createServer(app);
 app.get('/', function (req, res) {
   res.send('<h1>Hello World!</h1>');
 })
-server.listen(port,'0.0.0.0',() => {
+server.listen(port,'localhost',() => {
   const host = server.address().address
   const port = server.address().port
  
